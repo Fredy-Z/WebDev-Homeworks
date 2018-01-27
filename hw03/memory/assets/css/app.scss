@@ -2,5 +2,59 @@
 
 @import "bootstrap";
 
-.side { padding: 4ex; text-align: center; }
-h1 { text-align: center; }
+h1 { 
+    text-align: center ;
+    margin: 10px 0;
+}
+
+.container {
+    width: 40%;
+}
+
+.square-block {
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.enabled {
+    background-color: rgb(60, 128, 231);
+}
+
+.enabled:hover {
+    background-color: rgba(60, 128, 231, 0.8);
+    cursor: pointer;
+}
+
+.disabled {
+    background-color: rgb(200, 200, 200);
+}
+
+.matched {
+    background-color: rgb(9, 173, 44);
+}
+
+.timer {
+    float: right;
+}
+
+.score {
+    float: left;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.content {
+    font-size: 2rem;
+    padding: 29% 0;
+    color: rgb(255, 255, 255);
+}
+
+#startButton {
+    margin-top: 20px;
+}

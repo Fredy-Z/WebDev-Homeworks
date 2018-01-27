@@ -11,7 +11,7 @@
 //
 // If you no longer want to use a dependency, remember
 // to also remove its path from "config.paths.watched".
-import "phoenix_html";
+// import "phoenix_html"
 
 // Import local files
 //
@@ -20,13 +20,12 @@ import "phoenix_html";
 
 // import socket from "./socket"
 
-import run_demo from "./demo";
+import game_init from "./game.jsx"
 
-function init() {
-  let root = document.getElementById('game');
-  run_demo(root);
+
+function start() {
+    let root = document.getElementById("root");
+    game_init(root);
 }
 
-// Use jQuery to delay until page loaded.
-$(init);
-
+$(start);
