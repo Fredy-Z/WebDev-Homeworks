@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>hw2-task2</title>
+        
+        <style>
+            h1 {
+                text-align: center;
+            }
+            
+            button {
+                padding: 10px;
+                background-color: aliceblue;
+                border: 2px solid black;
+            }
+            
+            div {
+                text-align: center;
+            }
+            
+        </style>
+        
+        <script>
+            var num = 10;
+            
+            function showCurrentValue() {
+                alert(num);
+            }
+            
+            function increment() {
+                num++;
+            }
+            
+            function addNewParagraph() {
+                var paragraph = document.createElement("p");
+                paragraph.innerHTML = num;
+                document.body.appendChild(paragraph);
+            }
+        </script>
+    </head>
+    
+    <body>
+        <h1 id="number">10</h1>
+        <hr>
+        <div>
+            <button onclick="showCurrentValue()">show current value</button>
+            <button onclick="increment()">increment</button>
+            <button onclick="addNewParagraph()">add new paragraph</button>
+        </div>
+        <hr>
+        
+    </body>
+</html>

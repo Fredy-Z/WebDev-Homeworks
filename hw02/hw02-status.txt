@@ -1,0 +1,36 @@
+
+Web Dev Spring 2018 HW02 Status
+
+Answer the following questions:
+
+1. What's your name?
+Chi Zhang
+
+2. What's the URL of the github repo with your work for this HW?
+https://github.com/Fredy-Z/WebDev-Homeworks/tree/master/hw02
+
+3. What's the URL that you deployed to?
+http://hw02.solo-fun.info/
+
+4. How many of the tutorial exercises did you really do?
+20+
+
+5. How comfortable do you feel with HTML and CSS now?
+Quite comfortable. But I need to practice CSS more since there are so many attribute and tricks that I cannot remember. I believe I will master them after this course.
+
+
+6. How comfortable do you feel with JS and the DOM now?
+Pretty comfortable. I've used JS and the DOM a lot before. Hopefully I can learn more deep knowledge about native JS and the JS frameworks after this course.
+
+
+7. Do all four of your pages pass the W3C HTML validator?
+ (https://validator.w3.org/)
+Yes, they all pass.
+
+
+
+And here's a list of tasks for grading comments. Just leave this here:
+ - Task 1
+ - Task 2
+ - Task 3
+ - Submission

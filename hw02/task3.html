@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>hw2-task3</title>
+        
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            .header {
+                background-color: lightgray;
+                color: white;
+                padding: 10px;
+            }
+            
+            h1 {
+                text-align: center;
+            }
+            
+            .column {
+                float: left;
+                padding: 15px;
+            }
+            
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            
+            .menu {
+                width: 33%;
+            }
+            
+            .content {
+                width: 67%;
+            }
+            
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            li {
+                padding: 10px;
+                margin: 5px;
+                background-color: cornflowerblue;
+                color: white;
+            }
+            
+            li:hover {
+                background-color: deepskyblue;
+            }
+        </style>
+        
+        <script>
+            var loremIpsum ='\
+                In publishing and graphic design, lorem ipsum is a filler text or greeking commonly used to demonstrate the textual elements of a graphic document or visual presentation. Replacing meaningful content with placeholder text allows designers to design the form of the content before the content itself has been produced.<br>\
+                The lorem ipsum text is typically a scrambled section of De finibus bonorum et malorum, a 1st-century BC Latin text by Cicero, with words altered, added, and removed to make it nonsensical, improper Latin.<br>\
+                A variation of the ordinary lorem ipsum text has been used in typesetting since the 1960s or earlier, when it was popularized by advertisements for Letraset transfer sheets. It was introduced to the Information Age in the mid-1980s by Aldus Corporation, which employed it in graphics and word-processing templates for its desktop publishing program PageMaker.<br>\
+                A common form of lorem ipsum reads:<br>\
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.';
+
+            var nnBottlesOfBeer ='\
+                99 bottles of beer on the wall, 99 bottles of beer.<br>\
+                Take one down, pass it around, 98 bottles of beer on the wall...<br>\
+                No more bottles of beer on the wall, no more bottles of beer.<br>\
+                Go to the store and buy some more, 99 bottles of beer on the wall...';
+            
+            var lastThing = "this is the third thing";
+            
+            function displayContent(contentNum) {
+                var paragraph = document.getElementById("paragraph");
+                switch(contentNum) {
+                    case 0:
+                        paragraph.innerHTML = loremIpsum;
+                        break;
+                    case 1:
+                        paragraph.innerHTML = nnBottlesOfBeer;
+                        break;
+                    case 2:
+                        paragraph.innerHTML = lastThing;
+                        break;
+                    default:
+                        paragraph.innerHTML = loremIpsum;
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <div class="header">
+            <h1>HW02 Task Three</h1>
+        </div>
+        
+        <div class="clearfix">
+            <div class="column menu">
+                <ul>
+                    <li onclick="displayContent(0)">Lorem Ipsem</li>
+                    <li onclick="displayContent(1)">99 Bottles</li>
+                    <li onclick="displayContent(2)">Last Thing</li>
+                </ul>
+            </div>
+            
+            <div class="column content">
+                <p id="paragraph"></p>
+            </div>
+        </div>
+        
+        <script>
+            document.getElementById("paragraph").innerHTML = loremIpsum;
+        </script>
+    </body>
+</html>
