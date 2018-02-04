@@ -1,6 +1,21 @@
 # Calc
 
-**TODO: Add description**
+## Description
+This is a calculator program. You can run the program and input expressions like below, and it will help you to get the result.
+```
+calc$ mix run -e Calc.main
+> 2 + 3
+5
+> 5 * 1
+5
+> 20 / 4
+5
+> 24 / 6 + (5 - 4)
+5
+> 1 + 3 * 3 + 1
+11
+> ^C^C
+```
 
 ## Installation
 
